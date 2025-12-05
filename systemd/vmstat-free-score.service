@@ -1,0 +1,34 @@
+[Unit]
+Description=Run vmstat/free score collector (Raku via pinned binary)
+# Run only if both the interpreter and the script are present & executable
+ConditionPathIsExecutable=/var/lib/data/raku/bin/raku
+ConditionPathIsExecutable=/var/lib/data/scripts/vmstat-free-score.raku
+
+[Service]
+Type=oneshot
+# Run under your user since the script is 700 and owned by mdevine
+User=root
+Group=root
+
+# Working directory (adjust if your script expects relative paths)
+WorkingDirectory=/var/lib/data/scripts
+
+# Call Raku explicitly using the pinned interpreter path
+ExecStart=/var/lib/data/raku/bin/raku /var/lib/data/scripts/vmstat-free-score.raku
+
+# Journal tag
+SyslogIdentifier=vmstat-free-score
+
+# Security hardening with write access to /var/lib/data
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+LockPersonality=true
+RestrictSUIDSGID=true
+RestrictRealtime=true
+ProtectSystem=full
+# Allow writes where needed
+ReadWritePaths=/var/lib/data

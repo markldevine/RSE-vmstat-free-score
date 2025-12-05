@@ -1,0 +1,1 @@
+ls -Z /var/lib/data/raku/bin/raku ; chcon -t bin_t /var/lib/data/raku/bin/raku && semanage fcontext -a -t bin_t '/var/lib/data/raku/bin(/.*)?' && restorecon -Rv /var/lib/data/raku/bin ; ls -Z /var/lib/data/raku/bin/raku

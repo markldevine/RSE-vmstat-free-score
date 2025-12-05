@@ -1,0 +1,12 @@
+[Unit]
+Description=Timer: run vmstat-free-score at 50 seconds past every minute
+
+[Timer]
+OnCalendar=*-*-* *:*:50
+AccuracySec=1s
+RandomizedDelaySec=0
+Unit=vmstat-free-score.service
+Persistent=true
+
+[Install]
+WantedBy=timers.target
