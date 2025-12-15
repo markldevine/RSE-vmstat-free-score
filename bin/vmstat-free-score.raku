@@ -6,6 +6,8 @@
 #use Data::Dump::Tree;
 #use Grammar::Debugger;
 
+use MicroOS::vmstat::record;
+
 my DateTime $now;
 my DateTime $maintenance-window-open;
 my Int      $maintenance-window-duration-seconds;

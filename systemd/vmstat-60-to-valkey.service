@@ -1,27 +1,47 @@
 [Unit]
-Description=vmstat 60s sampler -> valkey
-Requires=valkey.service
-After=valkey.service
+Description=vmstat -> Valkey rolling sixty updater
+After=network-online.target
+Wants=network-online.target
 
 [Service]
 Type=simple
-ExecStart=/var/lib/data/raku/bin/raku /var/lib/data/scripts/vmstat-60-to-valkey.raku
+# Path where you install the compiled binary
+ExecStart=/var/lib/data/scripts/vmstat_60_to_valkey
 Restart=always
-RestartSec=1s
+RestartSec=3
 
-# Prevent systemd from throttling frequent restarts
-StartLimitIntervalSec=0
-StartLimitBurst=0
+# Environment overrides (optional)
+# Environment=VALKEY_ADDR=172.19.2.254:6379
+# Environment=VMSTAT_PATH=/usr/bin/vmstat
+# Environment=HOSTNAME_CMD=hostname
 
-# Optional niceties (you can keep or remove these)
-# Ensure we don't hang long on stop
-TimeoutStopSec=5s
-# Log to journal
+# Resource & security hardening (MicroOS-friendly)
+User=nobody
+Group=nogroup
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictRealtime=true
+RestrictSUIDSGID=true
+LockPersonality=true
+MemoryDenyWriteExecute=true
+ReadWritePaths=/var/lib/data/
+
+# Network & capabilities
+CapabilityBoundingSet=
+AmbientCapabilities=
+PrivateUsers=true
+
+# Limit filesystem access further if desired:
+# InaccessiblePaths=/home /root /mnt /media /srv
+
+# Logging goes to journald
 StandardOutput=journal
 StandardError=journal
-
-# If your script needs a specific working dir, uncomment:
-# WorkingDirectory=/var/lib/data/scripts
 
 [Install]
 WantedBy=multi-user.target
