@@ -6,7 +6,7 @@ Wants=network-online.target
 [Service]
 Type=simple
 # Path where you install the compiled binary
-ExecStart=/var/lib/data/scripts/vmstat_60_to_valkey
+ExecStart=/var/lib/data/scripts/vmstat-60-to-valkey
 Restart=always
 RestartSec=3
 
@@ -29,7 +29,7 @@ RestrictRealtime=true
 RestrictSUIDSGID=true
 LockPersonality=true
 MemoryDenyWriteExecute=true
-ReadWritePaths=/var/lib/data/
+#ReadWritePaths=/var/lib/data/
 
 # Network & capabilities
 CapabilityBoundingSet=
