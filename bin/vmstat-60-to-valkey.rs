@@ -372,7 +372,8 @@ fn init_rolling_sixty(valkey: &mut Valkey, list_name: &str) -> io::Result<()> {
 
 fn main() {
     // Config
-    let valkey_addr = env::var("VALKEY_ADDR").unwrap_or_else(|_| "172.19.2.254:6379".to_string());
+//  let valkey_addr = env::var("VALKEY_ADDR").unwrap_or_else(|_| "172.19.2.254:6379".to_string());
+    let valkey_addr = env::var("VALKEY_ADDR").unwrap_or_else(|_| "valkey-vip.rse.local:6379".to_string());
     let vmstat_path = env::var("VMSTAT_PATH").unwrap_or_else(|_| "/usr/bin/vmstat".to_string());
 
     // Hostname & list name
