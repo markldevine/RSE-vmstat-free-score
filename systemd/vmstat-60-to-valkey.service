@@ -5,17 +5,9 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-# Path where you install the compiled binary
 ExecStart=/var/lib/data/scripts/vmstat-60-to-valkey
 Restart=always
 RestartSec=3
-
-# Environment overrides (optional)
-# Environment=VALKEY_ADDR=172.19.2.254:6379
-# Environment=VMSTAT_PATH=/usr/bin/vmstat
-# Environment=HOSTNAME_CMD=hostname
-
-# Resource & security hardening (MicroOS-friendly)
 User=nobody
 Group=nogroup
 NoNewPrivileges=true
@@ -29,17 +21,7 @@ RestrictRealtime=true
 RestrictSUIDSGID=true
 LockPersonality=true
 MemoryDenyWriteExecute=true
-#ReadWritePaths=/var/lib/data/
-
-# Network & capabilities
-CapabilityBoundingSet=
-AmbientCapabilities=
 PrivateUsers=true
-
-# Limit filesystem access further if desired:
-# InaccessiblePaths=/home /root /mnt /media /srv
-
-# Logging goes to journald
 StandardOutput=journal
 StandardError=journal
 

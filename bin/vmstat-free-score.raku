@@ -3,9 +3,6 @@
 # vmstat-free-score-ema.raku
 # Final freedom score (0..100, higher = more idle) using hysteresis over N samples.
 
-#use Data::Dump::Tree;
-#use Grammar::Debugger;
-
 use MicroOS::vmstat::record;
 
 my DateTime $now;
@@ -56,6 +53,7 @@ else {
                 qqx{$valkey};
                 exit 0;
             }
+        }
     }
     else { die; }
 }

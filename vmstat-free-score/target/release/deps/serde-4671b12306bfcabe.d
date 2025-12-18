@@ -1,0 +1,14 @@
+/home/mdevine/github/RSE-vmstat-free-score/vmstat-free-score/target/release/deps/serde-4671b12306bfcabe.d: /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/mdevine/github/RSE-vmstat-free-score/vmstat-free-score/target/release/build/serde-3ae1646234b8aaed/out/private.rs
+
+/home/mdevine/github/RSE-vmstat-free-score/vmstat-free-score/target/release/deps/libserde-4671b12306bfcabe.rlib: /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/mdevine/github/RSE-vmstat-free-score/vmstat-free-score/target/release/build/serde-3ae1646234b8aaed/out/private.rs
+
+/home/mdevine/github/RSE-vmstat-free-score/vmstat-free-score/target/release/deps/libserde-4671b12306bfcabe.rmeta: /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/mdevine/github/RSE-vmstat-free-score/vmstat-free-score/target/release/build/serde-3ae1646234b8aaed/out/private.rs
+
+/home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/home/mdevine/github/RSE-vmstat-free-score/vmstat-free-score/target/release/build/serde-3ae1646234b8aaed/out/private.rs:
+
+# env-dep:OUT_DIR=/home/mdevine/github/RSE-vmstat-free-score/vmstat-free-score/target/release/build/serde-3ae1646234b8aaed/out

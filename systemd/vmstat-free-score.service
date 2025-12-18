@@ -1,34 +1,27 @@
 [Unit]
-Description=Run vmstat/free score collector (Raku via pinned binary)
-# Run only if both the interpreter and the script are present & executable
-ConditionPathIsExecutable=/var/lib/data/raku/bin/raku
-ConditionPathIsExecutable=/var/lib/data/scripts/vmstat-free-score.raku
+Description=RSE Freedom Score Daemon (Rust)
+After=network-online.target valkey.service
+Wants=network-online.target
 
 [Service]
-Type=oneshot
-# Run under your user since the script is 700 and owned by mdevine
+# The binary location (adjust if you put it elsewhere)
+ExecStart=/var/lib/data/scripts/vmstat-free-score
+
+# Restart automatically if it crashes or is killed
+Restart=always
+RestartSec=3
+
+# Simple output logging (goes to journald)
+StandardOutput=journal
+StandardError=journal
+
+# Run as root to ensure rebootmgrctl access (or use a user with permissions)
 User=root
 Group=root
 
-# Working directory (adjust if your script expects relative paths)
-WorkingDirectory=/var/lib/data/scripts
-
-# Call Raku explicitly using the pinned interpreter path
-ExecStart=/var/lib/data/raku/bin/raku /var/lib/data/scripts/vmstat-free-score.raku
-
-# Journal tag
-SyslogIdentifier=vmstat-free-score
-
-# Security hardening with write access to /var/lib/data
-NoNewPrivileges=true
-PrivateTmp=true
-ProtectHome=true
-ProtectKernelTunables=true
-ProtectKernelModules=true
-ProtectControlGroups=true
-LockPersonality=true
-RestrictSUIDSGID=true
-RestrictRealtime=true
+# Hardening (Optional but recommended for MicroOS)
 ProtectSystem=full
-# Allow writes where needed
-ReadWritePaths=/var/lib/data
+ProtectHome=yes
+
+[Install]
+WantedBy=multi-user.target

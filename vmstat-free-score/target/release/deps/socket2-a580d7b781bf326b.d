@@ -1,0 +1,11 @@
+/home/mdevine/github/RSE-vmstat-free-score/vmstat-free-score/target/release/deps/socket2-a580d7b781bf326b.d: /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.4.10/src/lib.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.4.10/src/sockaddr.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.4.10/src/socket.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.4.10/src/sockref.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.4.10/src/sys/unix.rs
+
+/home/mdevine/github/RSE-vmstat-free-score/vmstat-free-score/target/release/deps/libsocket2-a580d7b781bf326b.rlib: /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.4.10/src/lib.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.4.10/src/sockaddr.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.4.10/src/socket.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.4.10/src/sockref.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.4.10/src/sys/unix.rs
+
+/home/mdevine/github/RSE-vmstat-free-score/vmstat-free-score/target/release/deps/libsocket2-a580d7b781bf326b.rmeta: /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.4.10/src/lib.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.4.10/src/sockaddr.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.4.10/src/socket.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.4.10/src/sockref.rs /home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.4.10/src/sys/unix.rs
+
+/home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.4.10/src/lib.rs:
+/home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.4.10/src/sockaddr.rs:
+/home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.4.10/src/socket.rs:
+/home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.4.10/src/sockref.rs:
+/home/mdevine/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/socket2-0.4.10/src/sys/unix.rs:
